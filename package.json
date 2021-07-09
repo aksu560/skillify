@@ -1,7 +1,7 @@
 {
 	"private": true,
 	"name": "foundry-skillify",
-	"version": "0.0.4",
+	"version": "0.0.1",
 	"description": "",
 	"scripts": {
 		"package": "gulp package",

@@ -1,28 +1,28 @@
 {
-  "name": "foundry-skillify",
-  "title": "Skillify",
-  "description": "",
-  "author": "Aksu",
-  "authors": [],
-  "url": "https://github.com/aksu560/foundry-skillify",
-  "flags": {},
-  "version": "",
-  "minimumCoreVersion": "0.8.8",
-  "compatibleCoreVersion": "0.8.8",
-  "scripts": [],
-  "esmodules": [
-    "foundry-skillify.js"
-  ],
-  "styles": [
-    "foundry-skillify.css"
-  ],
-  "languages": [],
-  "packs": [],
-  "system": [],
-  "dependencies": [],
-  "socket": false,
-  "manifest": "",
-  "download": "",
-  "protected": false,
-  "coreTranslation": false
+	"name": "foundry-skillify",
+	"title": "Skillify",
+	"description": "",
+	"author": "Aksu",
+	"authors": [],
+	"url": "https://github.com/aksu560/skillify",
+	"flags": {},
+	"version": "0.0.1",
+	"minimumCoreVersion": "0.8.8",
+	"compatibleCoreVersion": "0.8.8",
+	"scripts": [],
+	"esmodules": [
+		"foundry-skillify.js"
+	],
+	"styles": [
+		"foundry-skillify.css"
+	],
+	"languages": [],
+	"packs": [],
+	"system": [],
+	"dependencies": [],
+	"socket": false,
+	"manifest": "https://raw.githubusercontent.com/aksu560/skillify/master/dist/module.json",
+	"download": "https://raw.githubusercontent.com/aksu560/skillify/master/package/foundry-skillify-v0.0.1.zip",
+	"protected": false,
+	"coreTranslation": false
 }
