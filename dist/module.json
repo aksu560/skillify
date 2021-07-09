@@ -1,0 +1,28 @@
+{
+  "name": "foundry-skillify",
+  "title": "Skillify",
+  "description": "",
+  "author": "Aksu",
+  "authors": [],
+  "url": "https://github.com/aksu560/foundry-cluster",
+  "flags": {},
+  "version": "",
+  "minimumCoreVersion": "0.8.8",
+  "compatibleCoreVersion": "0.8.8",
+  "scripts": [],
+  "esmodules": [
+    "foundry-cluster.js"
+  ],
+  "styles": [
+    "foundry-cluster.css"
+  ],
+  "languages": [],
+  "packs": [],
+  "system": [],
+  "dependencies": [],
+  "socket": false,
+  "manifest": "https://raw.githubusercontent.com/aksu560/foundry-cluster/master/dist/module.json",
+  "download": "https://raw.githubusercontent.com/aksu560/foundry-cluster/master/package/foundry-cluster-v0.0.4.zip",
+  "protected": false,
+  "coreTranslation": false
+}
