@@ -13,7 +13,7 @@ import { preloadTemplates } from './module/preloadTemplates.js';
 /* Initialize module					*/
 /* ------------------------------------ */
 Hooks.once('init', async function() {
-	console.log('foundry-cluster | Initializing foundry-cluster');
+	console.log('foundry-skillify | Initializing foundry-skillify');
 
 	// Assign custom classes and constants here
 	
@@ -38,9 +38,13 @@ Hooks.once('setup', function() {
 /* When ready							*/
 /* ------------------------------------ */
 Hooks.once('ready', function() {
-	setInterval(() => {
-		ui.notifications.info("Lmao");
-	}, 1000);
+	for (const [key, value] of Object.entries(CONFIG.PF1.skills)) {
+		const skillName = game.settings.get("foundry-skillify", key)
+		if (skillName) {
+			CONFIG.PF1.skills[key] = skillName;
+		}
+	}
+	console.log("Skillify Ready");
 });
 
 // Add any additional hooks if necessary

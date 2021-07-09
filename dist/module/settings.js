@@ -1,18 +1,19 @@
-export const registerSettings = function() {
-	game.settings.register("foundry-cluster", "syncInterval", {
-		name: "Synchronization Interval",
-		hint: "How often the module checks for synchronization. Note: The game only synchronizes if no users are connected to the world.",
-		scope: "client",
-		type: Number,
-		range: {
-			min: 1,
-			max: 120,
-			step: 1
-		},
-		default: 10,
-		config: true,
-		onChange: (value) => {
-			console.log("Set syncInterval to " + value);
+const changeSkillName = (new_value, key, name) => {
+	console.log(CONFIG.PF1.skills[key])
+		if (new_value.length == 0) {
+			console.log("Defaulting")
+			CONFIG.PF1.skills[key] = name;
+			return
 		}
-	});
+		CONFIG.PF1.skills[key] = new_value;
+	}
+export const registerSettings = function() {
+	for (const [key, value] of Object.entries(CONFIG.PF1.skills)) {
+		game.settings.register('foundry-skillify', key, {
+			name: value,
+			type: String,
+			config: true,
+			onChange: (new_value) => changeSkillName(new_value, key, value)
+		  });
+	}
 }
