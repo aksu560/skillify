@@ -17,8 +17,6 @@ Hooks.once('init', async function() {
 
 	// Assign custom classes and constants here
 	
-	// Register custom module settings
-	registerSettings();
 	
 	// Preload Handlebars templates
 	await preloadTemplates();
@@ -32,6 +30,8 @@ Hooks.once('init', async function() {
 Hooks.once('setup', function() {
 	// Do anything after initialization but before
 	// ready
+	// Register custom module settings
+	registerSettings();
 });
 
 /* ------------------------------------ */

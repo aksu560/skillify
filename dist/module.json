@@ -6,7 +6,7 @@
 	"authors": [],
 	"url": "https://github.com/aksu560/skillify",
 	"flags": {},
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"minimumCoreVersion": "0.8.8",
 	"compatibleCoreVersion": "0.8.8",
 	"scripts": [],
@@ -22,7 +22,7 @@
 	"dependencies": [],
 	"socket": false,
 	"manifest": "https://raw.githubusercontent.com/aksu560/skillify/master/dist/module.json",
-	"download": "https://raw.githubusercontent.com/aksu560/skillify/master/package/foundry-skillify-v0.0.1.zip",
+	"download": "https://raw.githubusercontent.com/aksu560/skillify/master/package/foundry-skillify-v0.1.0.zip",
 	"protected": false,
 	"coreTranslation": false
 }

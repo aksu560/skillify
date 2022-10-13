@@ -13,6 +13,7 @@ export const registerSettings = function() {
 			name: value,
 			type: String,
 			config: true,
+			default: game.i18n.localize(value),
 			onChange: (new_value) => changeSkillName(new_value, key, value)
 		  });
 	}
